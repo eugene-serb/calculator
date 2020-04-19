@@ -3,8 +3,7 @@ class Calculator {
     constructor() { };
 
     calculate(expression) {
-        return expression + ' return';
+        return eval(expression);
     };
-
 }
 
