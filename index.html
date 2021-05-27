@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="author" content="Eugene Serb" />
+    <meta name="keywords" content="eugene-seb, CV, contacts, repositories" />
+    <meta name="description" content="My name is Eugene Serb, and this page is my personal page with my contact info, services, repositories and biography">
+    <meta name="robots" content="all" />
+    <title>Eugene Serb -- Homepage</title>
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <link rel="stylesheet" type="text/css" href="css/calculator.css" />
+
+    <meta name="google-site-verification" content="dDXycFnUnLRVOpr87i5LEXVS1S5aia2Gj4k-kAcdLT4" />
+    <meta name="msvalidate.01" content="6E1771734F083E5366205F06314C3577" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ENJT2MN3ZP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ENJT2MN3ZP');</script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(76610724, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });</script>
+    <!-- /Yandex.Metrika counter -->
+</head>
+<body>
+    <section class="c-container">
+        <section>
+            <form id="calculator">
+                <input id="expression" placeholder="0" required disabled />
+                <span id="destination">0</span>
+            </form>
+        </section>
+        <section class="keyboard">
+            <button onclick="stateInterface();">SI</button>
+            <button class="del" onclick="cleanAll();">CE</button>
+            <button class="del" onclick="cleanDestination();">C</button>
+            <button class="del" onclick="backspace();">&larr;</button>
+
+            <button></button>
+            <button onclick="leftBracketPlacer();">&lang;</button>
+            <button onclick="rightBracketPlacer();">&rang;</button>
+            <button onclick="makeOperator('/');">/</button>
+
+            <button class="num" onclick="putNumeric('7');">7</button>
+            <button class="num" onclick="putNumeric('8');">8</button>
+            <button class="num" onclick="putNumeric('9');">9</button>
+            <button onclick="makeOperator('*');">&times;</button>
+
+            <button class="num" onclick="putNumeric('4');">4</button>
+            <button class="num" onclick="putNumeric('5');">5</button>
+            <button class="num" onclick="putNumeric('6');">6</button>
+            <button onclick="makeOperator('-');">&minus;</button>
+
+            <button class="num" onclick="putNumeric('1');">1</button>
+            <button class="num" onclick="putNumeric('2');">2</button>
+            <button class="num" onclick="putNumeric('3');">3</button>
+            <button onclick="makeOperator('+');">+</button>
+
+            <button onclick="plusMinusToggler();">&plusmn;</button>
+            <button class="num" onclick="putNumeric('0');">0</button>
+            <button onclick="putNumeric('.');">,</button>
+            <button class="equal" type="submit" form="calculator">=</button>
+        </section>
+    </section>
+
+    <!-- scripts zone below -->
+    <script src="js/interface.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/scripts.js"></script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/76610724" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+</body>
+</html>
+
