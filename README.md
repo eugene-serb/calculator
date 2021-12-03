@@ -1,5 +1,5 @@
-# calculator
-Calculator **[[rep](https://github.com/eugene-serb/calculator), [site](https://eugene-serb.github.io/resume/demos/calculator)]** on ***JavaScript*** and ***HTML with CSS***. 
+# Calculator
+Calculator **[[rep](https://github.com/eugene-serb/calculator), [site](https://eugene-serb.github.io/calculator/)]** on ***JavaScript*** and ***HTML with CSS***. 
 
 There is a few files:
 1. ***index.html***
