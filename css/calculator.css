@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-:root {
-    --color-background: #FFFFFF;
-    --color-border: #E3E3E3;
-    --color-header: #000000;
-    --color-text: #525252;
-    --color-link: #3E3E3E;
-    --color-link-hover: #3333FF;
-    --size-primary: 16px;
-}
+:root {}
 
 *, ::after, ::before {
     margin: 0;
@@ -20,7 +12,7 @@
 html {
     font-family: 'Roboto', sans-serif;
     direction: ltr;
-    font-size: var(--size-primary);
+    font-size: 16px;
     line-height: 1.382em;
 }
 
@@ -40,7 +32,7 @@ body {
 #calculator {
     display: grid;
     grid-template-rows: 2fr 3fr;
-    grid-gap: 0.2vh;
+    gap: 0.2vh;
     padding: 1vh;
     color: #EBDFDF;
 }
@@ -69,7 +61,7 @@ body {
     overflow: auto;
     text-align: right;
     font-size: 3em;
-    color: var(--color-background);
+    color: #FFFFFF;
 }
 
     #destination::placeholder {
@@ -79,7 +71,7 @@ body {
 .keyboard {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1px;
+    gap: 1px;
     background-color: #EBDFDF;
 }
 
@@ -95,9 +87,10 @@ body {
     }
 
     .keyboard > .del {
-        color: #ff8181;
+        color: #FF8181;
     }
 
     .keyboard > .equal {
-        color: #00ff26;
+        color: #00FF26;
     }
+

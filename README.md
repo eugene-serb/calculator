@@ -3,7 +3,7 @@ Calculator **[[rep](https://github.com/eugene-serb/calculator), [site](https://e
 
 There is a few files:
 1. ***index.html***
-2. ***style.css***
+2. ***calculator.css***
 3. ***interface.js***
 4. ***calculator.js***
 
