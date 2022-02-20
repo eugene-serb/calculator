@@ -1,25 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-
-:root {}
-
-*, ::after, ::before {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-family: 'Roboto', sans-serif;
-    direction: ltr;
-    font-size: 16px;
-    line-height: 1.382em;
-}
-
-body {
-    min-height: 100vh;
-    background: var(--color-background);
-}
+/* -------------- */
+/* CALCULATOR APP */
+/* -------------- */
 
 .c-container {
     height: 100vh;

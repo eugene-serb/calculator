@@ -8,11 +8,6 @@ let hasOperator = 0;
 let leftBracketCount = 0;
 let rightBracketCount = 0;
 
-function stateInterface() {
-    console.log(`isDicision: ${isDicision}, hasDot: ${hasDot}, hasOperator: ${hasOperator}`);
-    console.log(`leftBracketCount: ${leftBracketCount}, rightBracketCount: ${rightBracketCount}, ...`);
-};
-
 submit.onsubmit = function (event) {
     event.preventDefault();
 

@@ -69,7 +69,6 @@
     <!-- /Yandex.Metrika counter -->
 </head>
 <body>
-
     <header class="header">
         <div class="header-wrapper container">
 
@@ -98,10 +97,7 @@
     </header>
 
     <main class="page container">
-
-        <section class="visually-hidden">
-            <h1>Eugene Serb — Calculator</h1>
-        </section>
+        <h1 class="visually-hidden">Eugene Serb — Calculator</h1>
 
         <section class="c-container">
             <section>
@@ -111,7 +107,7 @@
                 </form>
             </section>
             <section class="keyboard">
-                <button onclick="stateInterface();">SI</button>
+                <button></button>
                 <button class="del" onclick="cleanAll();">CE</button>
                 <button class="del" onclick="cleanDestination();">C</button>
                 <button class="del" onclick="backspace();">&larr;</button>
@@ -138,14 +134,11 @@
 
                 <button onclick="plusMinusToggler();">&plusmn;</button>
                 <button class="num" onclick="putNumeric('0');">0</button>
-                <button onclick="putNumeric('.');">,</button>
+                <button onclick="putNumeric('.');">.</button>
                 <button class="equal" type="submit" form="calculator">=</button>
             </section>
         </section>
-
     </main>
-
-    <br />
 
     <script src="js/interface.js"></script>
     <script src="js/calculator.js"></script>
