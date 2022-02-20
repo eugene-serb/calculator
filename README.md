@@ -3,7 +3,7 @@ Calculator **[[rep](https://github.com/eugene-serb/calculator), [site](https://e
 
 There is a few files:
 1. ***index.html***
-2. ***style.css***
+2. ***calculator.css***
 3. ***interface.js***
 4. ***calculator.js***
 
@@ -25,4 +25,8 @@ Class calculator contains an expression validator and a calculator that can deci
 If the expression hasn't contains a valid expression or in process of calculating it turns out that this contains division by zero, consequently this returns an error in string type.
 
 Yes, interface.js no work good and need to be recoded for correctly building expression. Yes, calculator.js can be just replaced eval() function, but will be writted by for learn JavaScript and HTML with CSS.
+
+If you are interested in this or my other projects, or would like to suggest and share ideas with me, or just talk to me, contact me: *[@eugene_serb](https://t.me/eugene_serb)*
+
+Follow me on Twitter: *[@eugene_serb](https://twitter.com/eugene_serb)*
 
