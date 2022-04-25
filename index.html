@@ -96,14 +96,14 @@
     <main class="page container">
         <h1 class="visually-hidden">Eugene Serb — Calculator</h1>
 
-        <section class="c-container">
-            <section>
+        <div class="c-container">
+            <div>
                 <form id="calculator">
                     <input id="expression" placeholder="0" required disabled />
                     <span id="destination">0</span>
                 </form>
-            </section>
-            <section class="keyboard">
+            </div>
+            <div class="keyboard">
                 <button></button>
                 <button class="del" onclick="cleanAll();">CE</button>
                 <button class="del" onclick="cleanDestination();">C</button>
@@ -133,8 +133,8 @@
                 <button class="num" onclick="putNumeric('0');">0</button>
                 <button onclick="putNumeric('.');">.</button>
                 <button class="equal" type="submit" form="calculator">=</button>
-            </section>
-        </section>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
