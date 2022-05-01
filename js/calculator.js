@@ -364,7 +364,7 @@ class Interface {
         this.$BUTTON_LEFT_BRACKET = document.getElementById('leftBracket');
         this.$BUTTON_RIGHT_BRACKET = document.getElementById('rightBracket');
         this.$BUTTON_PLUS_MINUS = document.getElementById('plusMinus');
-        this.$BUTTONS_NUMERIC = document.querySelectorAll('.button_num');
+        this.$BUTTONS_NUMERIC = document.querySelectorAll('.button_numeric');
         this.$BUTTONS_OPERATOR = document.querySelectorAll('.button_operator');
     };
 

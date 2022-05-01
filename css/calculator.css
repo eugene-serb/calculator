@@ -63,11 +63,13 @@
     color: #EBDFDF;
 }
 
-    .button_num {
-        background-color: #414F5F;
-    }
+    .button_numeric {}
 
-    .button_del {
+        .button_lighter {
+            background-color: #414F5F;
+        }
+
+    .button_delete {
         color: #FF8181;
     }
 

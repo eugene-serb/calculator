@@ -23,7 +23,7 @@ Class calculator contains an expression validator and a calculator that can deci
 
 If the expression hasn't contains a valid expression or in process of calculating it turns out that this contains division by zero, consequently this returns an error in string type.
 
-Yes, interface class no work good and need to be recoded for correctly building expression. Yes, calculator.js can be just replaced eval() function, but will be writted by for learn JavaScript and HTML with CSS.
+Yes, interface class no work good and need to be recoded for correctly building expression. Yes, calculator class too no work good and need to be recoded and, so, can be just replaced eval function, but will be writted by for learn JavaScript and HTML with CSS.
 
 If you are interested in this or my other projects, or would like to suggest and share ideas with me, or just talk to me, contact me: *[@eugene_serb](https://t.me/eugene_serb)*
 
