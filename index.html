@@ -96,45 +96,46 @@
     <main class="page container">
         <h1 class="visually-hidden">Eugene Serb — Calculator</h1>
 
-        <div class="c-container">
-            <div>
-                <form id="calculator">
-                    <input id="expression" placeholder="0" required disabled />
-                    <span id="destination">0</span>
-                </form>
+        <section class="post">
+            <h2 class="post__header">Calculator</h2>
+            <div class="calculator">
+                <div class="display">
+                    <input id="input" placeholder="0" required disabled />
+                    <span id="output">0</span>
+                </div>
+                <div class="keyboard">
+                    <button class="button"></button>
+                    <button id="clean-all" class="button button_del">CE</button>
+                    <button id="clean-num" class="button button_del">C</button>
+                    <button id="backspace" class="button button_del">&larr;</button>
+
+                    <button class="button"></button>
+                    <button id="leftBracket" class="button">&lang;</button>
+                    <button id="rightBracket" class="button">&rang;</button>
+                    <button class="button button_operator">/</button>
+
+                    <button class="button button_num">7</button>
+                    <button class="button button_num">8</button>
+                    <button class="button button_num">9</button>
+                    <button class="button button_operator">*</button>
+
+                    <button class="button button_num">4</button>
+                    <button class="button button_num">5</button>
+                    <button class="button button_num">6</button>
+                    <button class="button button_operator">-</button>
+
+                    <button class="button button_num">1</button>
+                    <button class="button button_num">2</button>
+                    <button class="button button_num">3</button>
+                    <button class="button button_operator">+</button>
+
+                    <button id="plusMinus" class="button">&plusmn;</button>
+                    <button class="button button_num">0</button>
+                    <button class="button button_num">.</button>
+                    <button id="solve" class="button button_solve">=</button>
+                </div>
             </div>
-            <div class="keyboard">
-                <button></button>
-                <button class="del" onclick="cleanAll();">CE</button>
-                <button class="del" onclick="cleanDestination();">C</button>
-                <button class="del" onclick="backspace();">&larr;</button>
-
-                <button></button>
-                <button onclick="leftBracketPlacer();">&lang;</button>
-                <button onclick="rightBracketPlacer();">&rang;</button>
-                <button onclick="makeOperator('/');">/</button>
-
-                <button class="num" onclick="putNumeric('7');">7</button>
-                <button class="num" onclick="putNumeric('8');">8</button>
-                <button class="num" onclick="putNumeric('9');">9</button>
-                <button onclick="makeOperator('*');">&times;</button>
-
-                <button class="num" onclick="putNumeric('4');">4</button>
-                <button class="num" onclick="putNumeric('5');">5</button>
-                <button class="num" onclick="putNumeric('6');">6</button>
-                <button onclick="makeOperator('-');">&minus;</button>
-
-                <button class="num" onclick="putNumeric('1');">1</button>
-                <button class="num" onclick="putNumeric('2');">2</button>
-                <button class="num" onclick="putNumeric('3');">3</button>
-                <button onclick="makeOperator('+');">+</button>
-
-                <button onclick="plusMinusToggler();">&plusmn;</button>
-                <button class="num" onclick="putNumeric('0');">0</button>
-                <button onclick="putNumeric('.');">.</button>
-                <button class="equal" type="submit" form="calculator">=</button>
-            </div>
-        </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -146,7 +147,6 @@
         </div>
     </footer>
 
-    <script src="js/interface.js"></script>
     <script src="js/calculator.js"></script>
     <script src="https://eugene-serb.github.io/js/scripts.js"></script>
     <noscript><div><img src="https://mc.yandex.ru/watch/79722217" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
