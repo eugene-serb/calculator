@@ -11,6 +11,7 @@ class Calculator {
             return result;
         };
     };
+
     #validate = (expression) => {
         const symbolInspector = (expression) => {
             for (let i = 0; i < expression.length; i++) {
@@ -259,8 +260,8 @@ class Calculator {
 class Interface {
     constructor() {
         this.calculator = new Calculator();
-        this.#buttons();
-        this.#actions();
+        this.#DOMs();
+        this.#eventListeners();
         this.#cleanAll();
     };
 
@@ -354,7 +355,7 @@ class Interface {
         this.rightBracketCount++;
     };
 
-    #buttons = () => {
+    #DOMs = () => {
         this.$INPUT = document.getElementById('input');
         this.$OUTPUT = document.getElementById('output');
         this.$BUTTON_SOLVE = document.getElementById('solve');
@@ -367,8 +368,7 @@ class Interface {
         this.$BUTTONS_NUMERIC = document.querySelectorAll('.button_numeric');
         this.$BUTTONS_OPERATOR = document.querySelectorAll('.button_operator');
     };
-
-    #actions = () => {
+    #eventListeners = () => {
         this.$BUTTON_SOLVE.addEventListener('click', () => this.#solve());
         this.$BUTTON_CLEAN_ALL.addEventListener('click', () => this.#cleanAll());
         this.$BUTTON_CLEAN_NUM.addEventListener('click', () => this.#cleanDestination());
