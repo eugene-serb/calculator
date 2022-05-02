@@ -2,6 +2,8 @@
 /* CALCULATOR */
 /* ---------- */
 
+'use strict'
+
 class Calculator {
     constructor() {
         this.solve = (expression) => {
