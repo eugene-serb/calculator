@@ -2,6 +2,8 @@
 /* CALCULATOR */
 /* ---------- */
 
+@charset 'UTF-8';
+
 .calculator {
     height: 100vh;
     margin: 0 auto;
@@ -65,9 +67,9 @@
 
     .button_numeric {}
 
-        .button_lighter {
-            background-color: #414F5F;
-        }
+    .button_lighter {
+        background-color: #414F5F;
+    }
 
     .button_delete {
         color: #FF8181;

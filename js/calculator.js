@@ -264,7 +264,7 @@ class Interface {
         this.calculator = new Calculator();
         this.#DOMs();
         this.#eventListeners();
-        this.#cleanAll();
+        this.#reset();
     };
 
     #solve = () => {
@@ -282,7 +282,7 @@ class Interface {
         };
         this.$OUTPUT.innerText = this.calculator.solve(this.$INPUT.value);
     };
-    #cleanAll = () => {
+    #reset = () => {
         this.$INPUT.value = '';
         this.$OUTPUT.innerText = '0';
         this.isDicision = 0;
@@ -305,7 +305,7 @@ class Interface {
         this.$OUTPUT.innerText = this.$OUTPUT.innerText.slice(0, this.$OUTPUT.innerText.length - 1);
     };
     #putNumeric = (num) => {
-        if (this.isDicision === 1) this.#cleanAll();
+        if (this.isDicision === 1) this.#reset();
         if (this.hasOperator !== 0) {
             this.hasOperator = 0;
             this.#cleanDestination();
@@ -320,7 +320,7 @@ class Interface {
     };
     #makeOperator = (operator) => {
         if (this.isDicision === 1) {
-            this.#cleanAll();
+            this.#reset();
             let num = this.$OUTPUT.innerText;
             this.$OUTPUT.innerText = num;
         };
@@ -372,7 +372,7 @@ class Interface {
     };
     #eventListeners = () => {
         this.$BUTTON_SOLVE.addEventListener('click', () => this.#solve());
-        this.$BUTTON_CLEAN_ALL.addEventListener('click', () => this.#cleanAll());
+        this.$BUTTON_CLEAN_ALL.addEventListener('click', () => this.#reset());
         this.$BUTTON_CLEAN_NUM.addEventListener('click', () => this.#cleanDestination());
         this.$BUTTON_BACKSPACE.addEventListener('click', () => this.#backspace());
         this.$BUTTON_LEFT_BRACKET.addEventListener('click', () => this.#leftBracketPlacer());
