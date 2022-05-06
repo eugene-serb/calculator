@@ -1,8 +1,10 @@
-/* -------------- */
-/* CALCULATOR APP */
-/* -------------- */
+/* ---------- */
+/* CALCULATOR */
+/* ---------- */
 
-.c-container {
+@charset 'UTF-8';
+
+.calculator {
     height: 100vh;
     margin: 0 auto;
     display: grid;
@@ -10,7 +12,7 @@
     background-color: #414F5F;
 }
 
-#calculator {
+.display {
     display: grid;
     grid-template-rows: 2fr 3fr;
     gap: 0.2vh;
@@ -18,7 +20,7 @@
     color: #EBDFDF;
 }
 
-#expression {
+#input {
     width: 100%;
     height: 100%;
     border: none;
@@ -32,12 +34,12 @@
     padding: 1vh;
 }
 
-    #expression::placeholder {
+    #input::placeholder {
         color: #EBDFDF;
         text-align: right;
     }
 
-#destination {
+#output {
     padding: 1vh;
     overflow: auto;
     text-align: right;
@@ -45,7 +47,7 @@
     color: #FFFFFF;
 }
 
-    #destination::placeholder {
+    #output::placeholder {
         text-align: right;
     }
 
@@ -56,22 +58,24 @@
     background-color: #EBDFDF;
 }
 
-    .keyboard  > button {
-        border: none;
-        outline: none;
-        background-color: #333E4A;
-        color: #EBDFDF;
-    }
+.button {
+    border: none;
+    outline: none;
+    background-color: #333E4A;
+    color: #EBDFDF;
+}
 
-    .keyboard > .num {
+    .button_numeric {}
+
+    .button_lighter {
         background-color: #414F5F;
     }
 
-    .keyboard > .del {
+    .button_delete {
         color: #FF8181;
     }
 
-    .keyboard > .equal {
+    .button_solve {
         color: #00FF26;
     }
 
