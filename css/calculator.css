@@ -65,6 +65,11 @@
     color: #EBDFDF;
 }
 
+    .button:hover {
+        border: none;
+        outline: none;
+    }
+
     .button_numeric {}
 
     .button_lighter {
