@@ -2,7 +2,7 @@
 /* CALCULATOR */
 /* ---------- */
 
-'use strict'
+'use strict';
 
 class Calculator {
     constructor() {
@@ -73,7 +73,7 @@ class Calculator {
         if (!expression) return 'Expression is empty...';
         if (symbolInspector(expression) !== 0) return 'Expression contains an unexpected symbols...';
         if (bracketsCounter(expression) !== 0) return 'Expression contains no equal count of brackets...';
-        if (noAssociatedBracketsInspector(expression) !== 0) return 'Expression contains no associated brackets...'
+        if (noAssociatedBracketsInspector(expression) !== 0) return 'Expression contains no associated brackets...';
         if (operatorStreakInspector(expression) !== 0) return 'Expression contains streak operator...';
 
         return 0;
