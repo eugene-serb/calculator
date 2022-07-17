@@ -1,5 +1,5 @@
 # Calculator
-Calculator **[[rep](https://github.com/eugene-serb/calculator), [site](https://eugene-serb.github.io/calculator/)]** on ***JavaScript*** and ***HTML with CSS***. 
+Calculator in ***JavaScript*** and ***HTML*** with ***CSS*** **[[rep](https://github.com/eugene-serb/calculator), [site](https://eugene-serb.github.io/calculator/)]**. 
 
 There is a few files:
 1. ***index.html***
@@ -26,6 +26,4 @@ If the expression hasn't contains a valid expression or in process of calculatin
 Yes, interface class no work good and need to be recoded for correctly building expression. Yes, calculator class too no work good and need to be recoded and, so, can be just replaced eval function, but will be writted by for learn JavaScript and HTML with CSS.
 
 If you are interested in this or my other projects, or would like to suggest and share ideas with me, or just talk to me, contact me: *[@eugene_serb](https://t.me/eugene_serb)*
-
-Follow me on Twitter: *[@eugene_serb](https://twitter.com/eugene_serb)*
 
