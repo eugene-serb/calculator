@@ -396,4 +396,3 @@ class Interface {
 /* -------------- */
 
 const CALCULATOR = new Interface();
-
