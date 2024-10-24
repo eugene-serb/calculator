@@ -1,7 +1,3 @@
-/* ---------- */
-/* CALCULATOR */
-/* ---------- */
-
 'use strict';
 
 class Calculator {
@@ -78,6 +74,7 @@ class Calculator {
 
     return 0;
   };
+
   #calculate = (expression) => {
     const replacer = (expression, leftRange, rightRange, decision) => {
       let newExpression = expression.slice(0, leftRange) + decision + expression.slice(rightRange + 1, expression.length);
@@ -282,6 +279,7 @@ class Interface {
     };
     this.$OUTPUT.innerText = this.calculator.solve(this.$INPUT.value);
   };
+
   #reset = () => {
     this.$INPUT.value = '';
     this.$OUTPUT.innerText = '0';
@@ -291,10 +289,12 @@ class Interface {
     this.leftBracketCount = 0;
     this.rightBracketCount = 0;
   };
+
   #cleanDestination = () => {
     this.$OUTPUT.innerText = '0';
     this.hasDot = 0;
   };
+
   #backspace = () => {
     if (this.$OUTPUT.innerText === '0') return;
     if (this.$OUTPUT.innerText[this.$OUTPUT.innerText.length - 1] === '.') this.hasDot--;
@@ -304,6 +304,7 @@ class Interface {
     }
     this.$OUTPUT.innerText = this.$OUTPUT.innerText.slice(0, this.$OUTPUT.innerText.length - 1);
   };
+
   #putNumeric = (num) => {
     if (this.isDicision === 1) this.#reset();
     if (this.hasOperator !== 0) {
@@ -318,6 +319,7 @@ class Interface {
     };
     this.$OUTPUT.innerText = this.$OUTPUT.innerText + num;
   };
+
   #makeOperator = (operator) => {
     if (this.isDicision === 1) {
       this.#reset();
@@ -334,6 +336,7 @@ class Interface {
     this.$INPUT.value = this.$INPUT.value + this.$OUTPUT.innerText + ' ' + operator + ' ';
     this.hasOperator++;
   };
+
   #plusMinusToggler = () => {
     if (this.$OUTPUT.innerText[0] !== '-') {
       this.$OUTPUT.innerText = '-' + this.$OUTPUT.innerText;
@@ -341,10 +344,12 @@ class Interface {
     };
     this.$OUTPUT.innerText = this.$OUTPUT.innerText.slice(1, this.$OUTPUT.innerText.length);
   };
+
   #leftBracketPlacer = () => {
     this.$INPUT.value = this.$INPUT.value + '(';
     this.leftBracketCount++;
   };
+
   #rightBracketPlacer = () => {
     if (this.leftBracketCount <= this.rightBracketCount) return;
     if (this.$OUTPUT.innerText !== '0' && this.hasOperator === 0) {
@@ -370,6 +375,7 @@ class Interface {
     this.$BUTTONS_NUMERIC = document.querySelectorAll('.button_numeric');
     this.$BUTTONS_OPERATOR = document.querySelectorAll('.button_operator');
   };
+  
   #eventListeners = () => {
     this.$BUTTON_SOLVE.addEventListener('click', () => this.#solve());
     this.$BUTTON_CLEAN_ALL.addEventListener('click', () => this.#reset());
@@ -390,9 +396,5 @@ class Interface {
     });
   };
 };
-
-/* -------------- */
-/* INITIALIZATION */
-/* -------------- */
 
 const CALCULATOR = new Interface();
