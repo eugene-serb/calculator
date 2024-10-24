@@ -20,21 +20,12 @@ td {
 }
 
 .table_emerald thead > tr > th {
-  text-align: left;
-  font-weight: 400;
-}
-
-.table_emerald thead > tr > th:first-child {
-  width: 25%;
+  font-weight: 500;
 }
 
 .table_emerald tbody > tr:nth-child(even) {
   background-color: var(--color-table-item);
   color: var(--color-d);
-}
-
-tbody > tr > td:first-child {
-  width: 25%;
 }
 
 .table_emerald tfoot {
